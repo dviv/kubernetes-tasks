@@ -24,14 +24,14 @@ You need to have a Kubernetes cluster, and the kubectl command-line tool must be
 Apply the Redis Master Deployment from the redis-master-deployment.yaml file:
 ```
   kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
-  kubectl apply -f https://github.com/dviv/kubernetes-tasks/blob/master/guestbook/redis-master-deployment.yaml
+  kubectl apply -f https://raw.githubusercontent.com/dviv/kubernetes-tasks/master/guestbook/redis-master-deployment.yaml
 ```
 
 ## Creating the Redis Master Service
 Apply the Redis Master Deployment from the redis-master-service.yaml file:
 ```
 kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-service.yaml
-kubectl apply -f https://github.com/dviv/kubernetes-tasks/blob/master/guestbook/redis-master-service.yaml
+kubectl apply -f https://raw.githubusercontent.com/dviv/kubernetes-tasks/master/guestbook/redis-master-service.yaml
 ```
 
 ## Start up the Redis Slaves
@@ -40,14 +40,14 @@ Deployments scale based off of the configurations set in the manifest file. In t
 Apply the Redis Slave Deployment from the redis-slave-deployment.yaml file:
 ```
 kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-deployment.yaml
-kubectl apply -f https://github.com/dviv/kubernetes-tasks/blob/master/guestbook/redis-slave-deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/dviv/kubernetes-tasks/master/guestbook/redis-slave-deployment.yaml
 ```
 
 ## Creating the Redis Slave Service
 Apply the Redis Slave Service from the following redis-slave-service.yaml file:
 ```
   kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-service.yaml
-  kubectl apply -f https://github.com/dviv/kubernetes-tasks/blob/master/redis-slave-service.yaml
+  kubectl apply -f https://raw.githubusercontent.com/dviv/kubernetes-tasks/master/guestbook/redis-slave-service.yaml
 ```
 
 ## Set up and Expose the Guestbook Frontend
@@ -56,7 +56,7 @@ The guestbook application has a web frontend serving the HTTP requests written i
 Apply the frontend Deployment from the frontend-deployment.yaml file:
 ```
   kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-deployment.yaml
-  kubectl apply -f https://github.com/dviv/kubernetes-tasks/blob/master/frontend-deployment.yaml
+  kubectl apply -f https://raw.githubusercontent.com/dviv/kubernetes-tasks/master/guestbook/frontend-deployment.yaml
 ```
 Query the list of Pods to verify that the three frontend replicas are running:
 ```
@@ -74,7 +74,7 @@ The response should be similar to this:
 Apply the frontend Service from the frontend-service.yaml file:
 ```
   kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-service.yaml
-  kubectl apply -f https://github.com/dviv/kubernetes-tasks/blob/master/frontend-service.yaml
+  kubectl apply -f https://raw.githubusercontent.com/dviv/kubernetes-tasks/master/guestbook/frontend-service.yaml
 ```
 Query the list of Services to verify that the frontend Service is running:
 ```
