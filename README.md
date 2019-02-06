@@ -82,3 +82,20 @@ The response should be similar to this:
   redis-master   ClusterIP   10.0.0.151   <none>        6379/TCP       2m
   redis-slave    ClusterIP   10.0.0.223   <none>        6379/TCP       1m
 ```
+## Cleaning up
+Run the following commands to delete all Pods, Deployments, and Services.
+```
+  kubectl delete deployment -l app=redis
+  kubectl delete service -l app=redis
+  kubectl delete deployment -l app=guestbook
+  kubectl delete service -l app=guestbook
+```
+Query the list of Pods to verify that no Pods are running:
+
+```
+  kubectl get pods
+```
+The response should be this:
+```
+  No resources found.
+```
