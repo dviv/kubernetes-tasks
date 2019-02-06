@@ -6,25 +6,19 @@ Guestbook application.
 Follow the tutorial at https://kubernetes.io/docs/tutorials/stateless-application/guestbook/.
 
 ## Objectives
-- Create php apilication that run a guest book fronend.
-- Create a REdis backend to the php apilication.
-- Create a Kubernetes YAML fo run.
+- Start up a Redis master.
+- Start up Redis slaves.
+- Start up the guestbook frontend.
+- Expose and view the Frontend Service.
+- Clean up
 
-## How to deploy?
+## Before you begin
+You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. If you do not already have a cluster, you can create one by using Minikube, or you can use one of these Kubernetes playgrounds:
 
-### Install kubectl binary using curl
-```
-curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
-```
-Make the kubectl binary executable.
-```
-chmod +x ./kubectl
-```
-Move the binary in to your PATH.
-```
-sudo mv ./kubectl /usr/local/bin/kubectl
-```
+- [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
+- [Play with Kubernetes](https://https://labs.play-with-k8s.com/)
 
 
 
+## Start up the Redis Master
 
